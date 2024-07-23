@@ -22,3 +22,26 @@ const fn = function sum(accum, curr) { return accum + curr; };
 const init = 0;
 const result = reduce(nums, fn, init); // 10
 console.log(result); // Output: 10
+```
+
+### Example 2
+
+```javascript
+const nums = [1, 2, 3, 4];
+const fn = function sum(accum, curr) { return accum + curr * curr; };
+const init = 100;
+const result = reduce(nums, fn, init); // 130
+console.log(result); // Output: 130
+
+```
+
+### Example 3
+
+```javascript
+const nums = [];
+const fn = function sum(accum, curr) { return 0; };
+const init = 25;
+const result = reduce(nums, fn, init); // 25
+console.log(result); // Output: 25
+
+```
